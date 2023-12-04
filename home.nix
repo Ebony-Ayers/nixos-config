@@ -26,6 +26,11 @@
     #mathematica
     gnomeExtensions.caffeine
     gnomeExtensions.dash-to-dock
+    gcc
+    gnumake
+    cmake
+    gdb
+    ccache
   ];
   
   home.activation.create-folders = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
