@@ -14,6 +14,10 @@
       "files.autoSave" = "onFocusChange";
       "editor.insertSpaces" = false;
       "editor.minimap.enabled" = false;
+      "cmake.showOptionsMovedNotification" = false;
+      "C_Cpp.default.cppStandard" = "c++20";
+      "C_Cpp.default.intelliSenseMode" = "linux-gcc-x86";
+      "C_Cpp.vcFormat.indent.preprocessor" = "none";
     };
   };
 }

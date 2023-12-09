@@ -9,6 +9,7 @@
       push.default = "current";
       push.autoSetupRemote = true;
       safe.directory = "/etc/nixos";
+      advice.addIgnoredFile = false;
     };
   };
 }
