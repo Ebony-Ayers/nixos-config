@@ -9,9 +9,15 @@
       enable-hot-corners = false;
       gtk-enable-primary-paste = false;
       color-scheme = "prefer-dark";
+      clock-format = "12h";
+      clock-show-seconds = true;
+    };
+    "org/gtk/settings/file-chooser" = {
+      clock-format = "12h";
     };
     "org/gnome/desktop/peripherals/mouse" = {
       accel-profile = "flat";
+      speed = -0.3;
     };
     "org/gnome/desktop/peripherals/touchpad" = {
       tap-to-click = true;
