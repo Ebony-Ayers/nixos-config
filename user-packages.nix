@@ -2,7 +2,13 @@ pkgs:
 
 with pkgs; [
   google-chrome
-  python311
+  (pkgs.python311.withPackages (ppkgs: [
+      ppkgs.pyglet
+      ppkgs.numpy
+      ppkgs.matplotlib
+      ppkgs.pillow
+      ppkgs.networkx
+  ]))
   gimp
   qgis
   blender
@@ -22,5 +28,4 @@ with pkgs; [
   gdb
   ccache
   spotify
-  steam
 ]

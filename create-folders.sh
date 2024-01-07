@@ -51,6 +51,11 @@ if [[ "$symlinkFastStorage" = true ]] then
 	ln -s "$fastStorage/Data/git" "$homeDefault/git"
 	ln -s "$fastStorage/Data/gis" "$homeDefault/gis"
 	ln -s "$fastStorage/Data/code" "$homeDefault/code"
+	
+	#set the ownership
+	chown ebony:users "$homeDefault/git"
+	chown ebony:users "$homeDefault/gis"
+	chown ebony:users "$homeDefault/code"
 fi
 
 if [[ "$symlinkSlowStorage" = true ]] then
@@ -74,4 +79,11 @@ if [[ "$symlinkSlowStorage" = true ]] then
 	ln -s "$slowStorage/Data/Music" "$homeDefault/Music"
 	ln -s "$slowStorage/Data/Pictures" "$homeDefault/Pictures"
 	ln -s "$slowStorage/Data/Videos" "$homeDefault/Videos"
+	
+	#set the ownership
+	chown ebony:users "$homeDefault/Documents"
+	chown ebony:users "$homeDefault/Downloads"
+	chown ebony:users "$homeDefault/Music"
+	chown ebony:users "$homeDefault/Pictures"
+	chown ebony:users "$homeDefault/Videos"
 fi

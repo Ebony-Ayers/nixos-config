@@ -12,7 +12,6 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  #boot.kernel.sysctl = { "vm.swappiness" = 0; };
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/9f593023-bac7-4c3c-8109-56029f915e47";

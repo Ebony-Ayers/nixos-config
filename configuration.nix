@@ -84,7 +84,7 @@
   users.users.ebony = {
     isNormalUser = true;
     description = "Ebony";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "disk" ];
     packages = with pkgs; [];
   };
   home-manager = {
@@ -116,7 +116,6 @@
     gnome-connections
     gnome-disk-utility
     yelp
-    evince
     file-roller
     seahorse
     geary
